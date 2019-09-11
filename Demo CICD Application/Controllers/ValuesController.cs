@@ -41,5 +41,11 @@ namespace Demo_CICD_Application.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpGet]
+        public ActionResult<string> GetResults(int Id)
+        {
+            return Id.ToString();
+        }
     }
 }
